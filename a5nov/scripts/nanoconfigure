@@ -1,0 +1,60 @@
+#!/data/data/com.termux/files/usr/bin/bash
+# Generate .nanorc using only supported features.
+
+NANO_VERSION="$(nano --version 2>/dev/null)"
+NANORC="$HOME/.nanorc"
+
+supports() {
+    echo "$NANO_VERSION" | grep -q "$1"
+}
+
+echo "Creating Termux-Compatible ~/.nanorc …"
+
+{
+    echo "# Auto-generated .nanorc for Termux"
+    echo "# Generated: $(date)"
+    echo ""
+
+    # Basic always-safe settings
+    echo "set linenumbers"
+    echo "set softwrap"
+    echo "set tabsize 4"
+    echo "set autoindent"
+    echo "set historylog"
+    echo ""
+
+    # Mouse support
+    if supports "--enable-mouse"; then
+        echo "set mouse"
+    else
+        echo "# mouse unsupported in this nano build"
+    fi
+
+    # poslog: restore cursor position
+    if supports "poslog"; then
+        mkdir -p ~/.nano/poslog
+        echo "set poslog"
+    else
+        echo "# poslog unsupported in this nano version"
+    fi
+
+    # libmagic (file type detection)
+    if supports "libmagic"; then
+        echo "set magic"
+    else
+        echo "# magic unsupported"
+    fi
+
+    # file browser / directory browser
+    if supports "browser"; then
+        echo "set allow_insecure_browser"
+    else
+        echo "# browser unsupported"
+    fi
+
+    # Syntax highlighting (always safe)
+    echo "include /data/data/com.termux/files/usr/share/nano/*.nanorc"
+
+} > "$NANORC"
+
+echo "Done. Your ~/.nanorc is optimized for Termux."

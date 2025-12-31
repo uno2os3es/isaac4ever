@@ -1,0 +1,51 @@
+[build-system]
+requires = ["setuptools>=65.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "txt_toolz"
+version = "7.19.3"
+description = "A pure-Python library for text processing, file handling, and lightweight NLP utilities."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+authors = [
+    { name = "Isaac Onagh", email = "mkalafsaz@egmail.com" }
+]
+
+keywords = [
+    "text",
+    "string utilities",
+    "nlp",
+    "tfidf",
+    "similarity",
+    "processing",
+]
+
+classifiers = [
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Text Processing",
+    "Topic :: Text Processing :: Linguistic",
+]
+
+# No third-party dependencies
+dependencies = []
+
+[project.urls]
+Homepage = "https://github.com/isaac4ever/txt_toolz"
+
+[tool.setuptools]
+packages = ["txt_toolz"]
+
+[tool.pytest.ini_options]
+pythonpath = ["."]
+addopts = "-q"
+testpaths = ["tests"]

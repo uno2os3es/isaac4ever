@@ -1,0 +1,823 @@
+== Installed Android Tools ==
+
+2025-02-18 09:03:30,979 DEBUG: Reading 'config.yml'
+2025-02-18 09:03:30,992 INFO: Creating log directory
+2025-02-18 09:03:30,992 INFO: Creating temporary directory
+2025-02-18 09:03:30,992 INFO: Creating output directory
+2025-02-18 09:03:31,000 DEBUG: Getting git vcs interface for https://github.com/termux/termux-gui.git
+2025-02-18 09:03:31,000 DEBUG: Checking com.termux.gui:7
+2025-02-18 09:03:31,000 INFO: Building version 0.1.6 (7) of com.termux.gui
+2025-02-18 09:03:31,000 WARNING: Android NDK version 'r23b' could not be found!
+2025-02-18 09:03:31,000 WARNING: Configured versions:
+Downloading https://f-droid.github.io/android-sdk-transparency-log/signed/checksums.json.asc into /home/vagrant/.cache/sdkmanager/checksums.json.asc
+2025-02-18 09:03:31,421 DEBUG: Starting new HTTPS connection (1): f-droid.github.io:443
+2025-02-18 09:03:31,654 DEBUG: https://f-droid.github.io:443 "GET /android-sdk-transparency-log/signed/checksums.json.asc HTTP/1.1" 200 488
+2025-02-18 09:03:31,659 DEBUG: Starting new HTTPS connection (1): f-droid.github.io:443
+2025-02-18 09:03:31,871 DEBUG: https://f-droid.github.io:443 "GET /android-sdk-transparency-log/signed/checksums.json HTTP/1.1" 200 144349
+Downloading https://f-droid.github.io/android-sdk-transparency-log/signed/checksums.json into /home/vagrant/.cache/sdkmanager/checksums.json
+Downloading https://dl.google.com/android/repository/android-ndk-r23b-linux.zip into /home/vagrant/.cache/sdkmanager/android-ndk-r23b-linux.zip
+2025-02-18 09:03:32,296 DEBUG: Starting new HTTPS connection (1): dl.google.com:443
+2025-02-18 09:03:32,429 DEBUG: https://dl.google.com:443 "GET /android/repository/android-ndk-r23b-linux.zip HTTP/1.1" 200 725122099
+Unzipping to /tmp/.sdkmanager-p_y75usi
+ERROR: Unexpected symlink target: android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/arm-linux-androideabi/bin/as -> /buildbot/src/android/ndk-release-r23/out/linux/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/arm-linux-androideabi-as
+ERROR: Unexpected symlink target: android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/i686-linux-android/bin/as -> /buildbot/src/android/ndk-release-r23/out/linux/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/i686-linux-android-as
+ERROR: Unexpected symlink target: android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/x86_64-linux-android/bin/as -> /buildbot/src/android/ndk-release-r23/out/linux/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/x86_64-linux-android-as
+ERROR: Unexpected symlink target: android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/bin/as -> /buildbot/src/android/ndk-release-r23/out/linux/android-ndk-r23b/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-as
+Installing into /opt/android-sdk/ndk/23.1.7779620
+2025-02-18 09:04:28,160 INFO: Set NDK r23b (23.1.7779620) up
+2025-02-18 09:04:28,162 DEBUG: > sudo passwd --lock root
+passwd: password changed.
+2025-02-18 09:04:28,767 DEBUG: > sudo SUDO_FORCE_REMOVE=yes dpkg --purge sudo
+(Reading database ... 64017 files and directories currently installed.)
+Removing sudo (1.9.13p3-1+deb12u1) ...
+Purging configuration files for sudo (1.9.13p3-1+deb12u1) ...
+dpkg: warning: while removing sudo, directory '/etc/sudoers.d' not empty so not removed
+Processing triggers for libc-bin (2.36-9+deb12u9) ...
+2025-02-18 09:05:17,758 INFO: Getting source for revision 4695f6444488c8f0e74aedff5c682be570292a47
+2025-02-18 09:05:17,759 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:17,759 DEBUG: > git rev-parse --show-toplevel
+2025-02-18 09:05:17,964 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:17,964 DEBUG: > git submodule foreach --recursive git reset --hard
+2025-02-18 09:05:18,167 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:18,167 DEBUG: > git reset --hard
+2025-02-18 09:05:18,671 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:18,671 DEBUG: > git submodule foreach --recursive git clean -dffx
+2025-02-18 09:05:18,774 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:18,775 DEBUG: > git clean -dffx
+2025-02-18 09:05:18,878 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:18,878 DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com -c url.https://u:p@codeberg.org/.insteadOf=git@codeberg.org: -c url.https://u:p@codeberg.org.insteadOf=git://codeberg.org -c url.https://u:p@codeberg.org.insteadOf=https://codeberg.org fetch --prune --prune-tags --force origin
+2025-02-18 09:05:19,683 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:19,683 DEBUG: > git -c core.askpass=/bin/true -c core.sshCommand=/bin/false -c url.https://.insteadOf=ssh:// -c url.https://u:p@bitbucket.org/.insteadOf=git@bitbucket.org: -c url.https://u:p@bitbucket.org.insteadOf=git://bitbucket.org -c url.https://u:p@bitbucket.org.insteadOf=https://bitbucket.org -c url.https://u:p@github.com/.insteadOf=git@github.com: -c url.https://u:p@github.com.insteadOf=git://github.com -c url.https://u:p@github.com.insteadOf=https://github.com -c url.https://u:p@gitlab.com/.insteadOf=git@gitlab.com: -c url.https://u:p@gitlab.com.insteadOf=git://gitlab.com -c url.https://u:p@gitlab.com.insteadOf=https://gitlab.com -c url.https://u:p@codeberg.org/.insteadOf=git@codeberg.org: -c url.https://u:p@codeberg.org.insteadOf=git://codeberg.org -c url.https://u:p@codeberg.org.insteadOf=https://codeberg.org fetch --prune --tags --force origin
+2025-02-18 09:05:20,288 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:20,288 DEBUG: > git remote set-head origin --auto
+2025-02-18 09:05:20,899 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:20,899 DEBUG: > git checkout -f 4695f6444488c8f0e74aedff5c682be570292a47
+2025-02-18 09:05:21,604 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:21,604 DEBUG: > git clean -dffx
+2025-02-18 09:05:21,707 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:21,708 DEBUG: > git rev-parse --show-toplevel
+2025-02-18 09:05:21,911 DEBUG: Directory: build/com.termux.gui
+2025-02-18 09:05:21,912 DEBUG: > git submodule deinit --all --force
+2025-02-18 09:05:22,115 INFO: Creating local.properties file at build/com.termux.gui/local.properties
+2025-02-18 09:05:22,118 INFO: Creating local.properties file at build/com.termux.gui/app/local.properties
+2025-02-18 09:05:22,119 DEBUG: Removing debuggable flags from build/com.termux.gui/app
+2025-02-18 09:05:22,132 INFO: Cleaned build.gradle of keysigning configs at build/com.termux.gui/app/build.gradle
+2025-02-18 09:05:22,138 INFO: Running 'prebuild' commands in build/com.termux.gui/app
+2025-02-18 09:05:22,138 DEBUG: Directory: build/com.termux.gui/app
+2025-02-18 09:05:22,138 DEBUG: > bash -e -u -o pipefail -x -c -- sdkmanager 'cmake;3.10.2.4988404'
+/etc/bash.bashrc: line 7: PS1: unbound variable
++ sdkmanager 'cmake;3.10.2.4988404'
+Downloading https://dl.google.com/android/repository/cmake-3.10.2-linux-x86_64.zip into /home/vagrant/.cache/sdkmanager/cmake-3.10.2-linux-x86_64.zip
+Unzipping to /tmp/.sdkmanager-ra_tnx2s
+Installing into /opt/android-sdk/cmake/3.10.2.4988404
+2025-02-18 09:05:25,049 INFO: Cleaning Gradle project...
+2025-02-18 09:05:25,049 DEBUG: Directory: build/com.termux.gui/app
+2025-02-18 09:05:25,050 DEBUG: > /home/vagrant/fdroidserver/gradlew-fdroid clean
+Found 7.5.1 via distributionUrl
+Downloading missing gradle version 7.5.1
+cachedir /home/vagrant/.cache/fdroidserver
+/home/vagrant/.cache/fdroidserver/gradle-7.5.1-bin.zip: OK
+Running /opt/gradle/versions/7.5.1/bin/gradle clean
+
+Welcome to Gradle 7.5.1!
+
+Here are the highlights of this release:
+ - Support for Java 18
+ - Support for building with Groovy 4
+ - Much more responsive continuous builds
+ - Improved diagnostics for dependency resolution
+
+For more details see https://docs.gradle.org/7.5.1/release-notes.html
+
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+Configuration cache is an incubating feature.
+Calculating task graph as no configuration cache is available for tasks: clean
+
+> Configure project :app
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+
+> Configure project :hbuffers
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+
+> Task :app:externalNativeBuildCleanDebug
+> Task :app:externalNativeBuildCleanDebugMinify
+> Task :app:externalNativeBuildCleanRelease
+> Task :app:clean
+
+0 problems were found storing the configuration cache.
+
+See the complete report at file:///home/vagrant/build/com.termux.gui/build/reports/configuration-cache/es0y75ruji0vrco2qxstfq25r/c3q7k6crmsps1eoc45r8knxmd/configuration-cache-report.html
+
+BUILD SUCCESSFUL in 54s
+4 actionable tasks: 4 executed
+Configuration cache entry stored.
+2025-02-18 09:06:25,164 INFO: Scanning source for common problems...
+2025-02-18 09:06:25,195 DEBUG: scanner is configured to use signature data from: 'suss'
+2025-02-18 09:06:25,195 DEBUG: downloading 'https://fdroid.gitlab.io/fdroid-suss/suss.json'
+2025-02-18 09:06:25,713 DEBUG: write 'suss.json' to cache
+2025-02-18 09:06:25,716 DEBUG: next suss.json cache update due in 23:59:59.986106
+2025-02-18 09:06:25,855 INFO: Removing gradle-wrapper.jar at gradle/wrapper/gradle-wrapper.jar
+2025-02-18 09:06:25,883 INFO: Creating source tarball...
+2025-02-18 09:06:28,122 INFO: Building Gradle project...
+2025-02-18 09:06:28,122 DEBUG: Directory: build/com.termux.gui/app
+2025-02-18 09:06:28,122 DEBUG: > /home/vagrant/fdroidserver/gradlew-fdroid assembleRelease
+Found 7.5.1 via distributionUrl
+Running /opt/gradle/versions/7.5.1/bin/gradle assembleRelease
+To honour the JVM settings for this build a single-use Daemon process will be forked. See https://docs.gradle.org/7.5.1/userguide/gradle_daemon.html#sec:disabling_the_daemon.
+Daemon will be stopped at the end of the build 
+Configuration cache is an incubating feature.
+Calculating task graph as no configuration cache is available for tasks: assembleRelease
+
+> Configure project :app
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+
+> Configure project :hbuffers
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+WARNING:[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+Exception while marshalling /opt/android-sdk/platforms/android-10/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-11/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-12/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-13/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-14/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-15/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-16/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-17/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-18/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-19/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-20/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-21/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-22/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-23/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-24/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-25/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-26/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-27/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-28/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-29/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-30/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-31/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-32/package.xml. Probably the SDK is read-only
+Exception while marshalling /opt/android-sdk/platforms/android-33/package.xml. Probably the SDK is read-only
+
+> Task :hbuffers:preBuild UP-TO-DATE
+> Task :hbuffers:preReleaseBuild UP-TO-DATE
+> Task :hbuffers:compileReleaseAidl NO-SOURCE
+
+> Task :hbuffers:configureCMakeRelWithDebInfo[arm64-v8a]
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :hbuffers:buildCMakeRelWithDebInfo[arm64-v8a]
+
+> Task :hbuffers:configureCMakeRelWithDebInfo[armeabi-v7a]
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :hbuffers:buildCMakeRelWithDebInfo[armeabi-v7a]
+
+> Task :hbuffers:configureCMakeRelWithDebInfo[x86]
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :hbuffers:buildCMakeRelWithDebInfo[x86]
+
+> Task :hbuffers:configureCMakeRelWithDebInfo[x86_64]
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:10 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/hbuffers/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/hbuffers/.cxx/RelWithDebInfo/6a544j4b/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :hbuffers:buildCMakeRelWithDebInfo[x86_64]
+> Task :hbuffers:externalNativeBuildRelease
+> Task :hbuffers:mergeReleaseJniLibFolders
+> Task :hbuffers:compileReleaseRenderscript NO-SOURCE
+> Task :hbuffers:generateReleaseResValues
+> Task :hbuffers:mergeReleaseNativeLibs
+> Task :hbuffers:extractDeepLinksForAarRelease
+> Task :hbuffers:generateReleaseBuildConfig
+> Task :hbuffers:generateReleaseResources
+> Task :hbuffers:stripReleaseDebugSymbols
+> Task :hbuffers:packageReleaseResources
+> Task :hbuffers:copyReleaseJniLibsProjectAndLocalJars
+> Task :hbuffers:parseReleaseLocalResources
+> Task :hbuffers:javaPreCompileRelease
+> Task :hbuffers:mergeReleaseShaders
+> Task :hbuffers:compileReleaseShaders NO-SOURCE
+> Task :hbuffers:generateReleaseAssets UP-TO-DATE
+> Task :hbuffers:packageReleaseAssets
+> Task :hbuffers:packageReleaseRenderscript NO-SOURCE
+> Task :hbuffers:prepareReleaseArtProfile
+> Task :hbuffers:prepareLintJarForPublish
+> Task :hbuffers:processReleaseJavaRes NO-SOURCE
+> Task :hbuffers:writeReleaseAarMetadata
+> Task :hbuffers:processReleaseManifest
+> Task :app:buildKotlinToolingMetadata
+> Task :app:preBuild UP-TO-DATE
+> Task :app:preReleaseBuild UP-TO-DATE
+> Task :app:compileReleaseAidl NO-SOURCE
+> Task :app:compileReleaseRenderscript NO-SOURCE
+> Task :hbuffers:generateReleaseRFile
+> Task :app:dataBindingMergeDependencyArtifactsRelease
+> Task :app:generateReleaseResValues
+> Task :app:generateReleaseResources
+> Task :app:generateReleaseBuildConfig
+> Task :app:extractProto
+> Task :app:extractReleaseProto
+> Task :app:checkReleaseAarMetadata
+> Task :app:mapReleaseSourceSetPaths
+> Task :app:createReleaseCompatibleScreenManifests
+> Task :app:extractDeepLinksRelease
+> Task :hbuffers:extractDeepLinksRelease
+> Task :app:processReleaseMainManifest
+> Task :app:processReleaseManifest
+> Task :hbuffers:compileReleaseLibraryResources
+> Task :app:javaPreCompileRelease
+> Task :app:extractProguardFiles
+> Task :hbuffers:writeReleaseLintModelMetadata
+> Task :app:mergeReleaseResources
+
+> Task :app:configureCMakeRelWithDebInfo[arm64-v8a]
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|arm64-v8a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/arm64-v8a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/arm64-v8a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :app:dataBindingGenBaseClassesRelease
+> Task :app:buildCMakeRelWithDebInfo[arm64-v8a]
+
+> Task :app:configureCMakeRelWithDebInfo[armeabi-v7a]
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|armeabi-v7a : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/armeabi-v7a/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/armeabi-v7a/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :hbuffers:compileReleaseKotlin
+> Task :hbuffers:extractReleaseAnnotations
+> Task :hbuffers:compileReleaseJavaWithJavac
+> Task :hbuffers:mergeReleaseGeneratedProguardFiles
+> Task :hbuffers:mergeReleaseConsumerProguardFiles
+> Task :hbuffers:bundleLibResRelease
+> Task :hbuffers:bundleLibRuntimeToJarRelease
+> Task :hbuffers:bundleLibCompileToJarRelease
+> Task :hbuffers:mergeReleaseJavaResource
+> Task :app:buildCMakeRelWithDebInfo[armeabi-v7a]
+> Task :hbuffers:syncReleaseLibJars
+> Task :hbuffers:bundleReleaseLocalLintAar
+> Task :hbuffers:createFullJarRelease
+> Task :app:extractIncludeReleaseProto
+> Task :app:generateReleaseProto
+
+> Task :app:configureCMakeRelWithDebInfo[x86]
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :app:buildCMakeRelWithDebInfo[x86]
+
+> Task :app:configureCMakeRelWithDebInfo[x86_64]
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /opt/android-sdk/cmake/3.10.2.4988404/share/cmake-3.10/Modules/CMakeDetermineSystem.cmake:94 (include)
+  CMakeLists.txt:11 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+C/C++: /home/vagrant/build/com.termux.gui/app/src/main/cpp/CMakeLists.txt release|x86_64 : CMake Warning at /opt/android-sdk/ndk/23.1.7779620/build/cmake/android-legacy.toolchain.cmake:416 (message):
+  An old version of CMake is being used that cannot automatically detect
+  compiler attributes.  Compiler identification is being bypassed.  Some
+  values may be wrong or missing.  Update to CMake 3.19 or newer to use
+  CMake's built-in compiler identification.
+Call Stack (most recent call first):
+  /opt/android-sdk/ndk/23.1.7779620/build/cmake/android.toolchain.cmake:55 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86_64/CMakeFiles/3.10.2/CMakeSystem.cmake:6 (include)
+  /home/vagrant/build/com.termux.gui/app/.cxx/RelWithDebInfo/10x2vj3b/x86_64/CMakeFiles/CMakeTmp/CMakeLists.txt:2 (project)
+
+
+> Task :app:buildCMakeRelWithDebInfo[x86_64]
+> Task :hbuffers:copyReleaseJniLibsProjectOnly
+> Task :app:mergeReleaseJniLibFolders
+> Task :app:externalNativeBuildRelease
+> Task :app:mergeReleaseNativeLibs
+> Task :app:mergeReleaseArtProfile
+> Task :app:stripReleaseDebugSymbols
+> Task :hbuffers:exportReleaseConsumerProguardFiles
+
+> Task :app:extractReleaseNativeSymbolTables
+[CXX5106] NDK was located by using ndk.dir property. This method is deprecated and will be removed in a future release. Please delete ndk.dir from local.properties and set android.ndkVersion to [23.1.7779620] in all native modules in the project. https://developer.android.com/r/studio-ui/ndk-dir
+
+> Task :app:mergeReleaseNativeDebugMetadata NO-SOURCE
+> Task :app:processReleaseJavaRes NO-SOURCE
+> Task :app:mergeReleaseShaders
+> Task :app:compileReleaseShaders NO-SOURCE
+> Task :app:generateReleaseAssets UP-TO-DATE
+> Task :app:checkReleaseDuplicateClasses
+> Task :app:mergeReleaseAssets
+> Task :app:compressReleaseAssets
+> Task :app:collectReleaseDependencies
+> Task :app:processReleaseManifestForPackage
+> Task :app:sdkReleaseDependencyData
+> Task :app:writeReleaseAppMetadata
+> Task :app:writeReleaseSigningConfigVersions
+> Task :app:processReleaseResources
+> Task :app:optimizeReleaseResources
+> Task :app:compileReleaseKotlin
+w: file:///home/vagrant/build/com.termux.gui/app/src/main/java/com/termux/gui/GUIService.kt:107:21 'stopForeground(Boolean): Unit' is deprecated. Deprecated in Java
+w: file:///home/vagrant/build/com.termux.gui/app/src/main/java/com/termux/gui/protocol/protobuf/ProtoUtils.kt:168:60 Parameter 'enabled' is never used
+w: file:///home/vagrant/build/com.termux.gui/app/src/main/java/com/termux/gui/protocol/protobuf/v0/HandleGlobal.kt:74:22 Parameter 'm' is never used
+w: file:///home/vagrant/build/com.termux.gui/app/src/main/java/com/termux/gui/protocol/protobuf/v0/HandleGlobal.kt:95:18 Parameter 'm' is never used
+w: file:///home/vagrant/build/com.termux.gui/app/src/main/java/com/termux/gui/protocol/protobuf/v0/HandleRemote.kt:24:22 Parameter 'm' is never used
+w: file:///home/vagrant/build/com.termux.gui/app/src/main/java/com/termux/gui/protocol/protobuf/v0/HandleView.kt:116:18 Parameter 'm' is never used
+
+> Task :app:compileReleaseJavaWithJavac
+> Task :app:mergeReleaseGeneratedProguardFiles
+> Task :app:mergeReleaseJavaResource
+
+> Task :app:minifyReleaseWithR8
+WARNING:Missing classes detected while running R8. Please add the missing classes or apply additional keep rules that are generated in /home/vagrant/build/com.termux.gui/app/build/outputs/mapping/release/missing_rules.txt.
+
+WARNING:R8: Missing class com.google.errorprone.annotations.Immutable (referenced from: com.google.crypto.tink.KeyTemplate and 4 other contexts)
+Missing class javax.annotation.concurrent.GuardedBy (referenced from: com.google.crypto.tink.proto.Keyset$Builder com.google.crypto.tink.KeysetManager.keysetBuilder and 3 other contexts)
+
+> Task :app:lintVitalAnalyzeRelease
+> Task :app:lintVitalReportRelease
+> Task :app:lintVitalRelease
+> Task :app:compileReleaseArtProfile
+> Task :app:packageRelease
+> Task :app:createReleaseApkListingFileRedirect
+> Task :app:assembleRelease
+
+0 problems were found storing the configuration cache.
+
+See the complete report at file:///home/vagrant/build/com.termux.gui/build/reports/configuration-cache/7y289okk2nehca7i8ik786oty/cbbsa2hgky2htxjty94027id0/configuration-cache-report.html
+
+BUILD SUCCESSFUL in 5m 12s
+97 actionable tasks: 97 executed
+Configuration cache entry stored.
+2025-02-18 09:11:41,858 DEBUG: Popen(['git', 'cat-file', '--batch-check'], cwd=/home/vagrant/build/com.termux.gui, universal_newlines=False, shell=None, istream=<valid stream>)
+2025-02-18 09:11:41,864 INFO: Successfully built version 0.1.6 of com.termux.gui from 4695f6444488c8f0e74aedff5c682be570292a47
+2025-02-18 09:11:42,212 DEBUG: Checking build/com.termux.gui/app/build/outputs/apk/release/app-release-unsigned.apk
+2025-02-18 09:11:42,239 INFO: success: com.termux.gui
+2025-02-18 09:11:42,239 INFO: Finished
+2025-02-18 09:11:42,240 INFO: 1 build succeeded

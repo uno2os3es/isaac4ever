@@ -1,0 +1,9 @@
+[build-system]
+build-backend = "setuptools.build_meta"
+requires = ["setuptools"]
+[tool.cibuildwheel]
+build = "*"
+skip = "cp38* cp39* cp3??t-* *cp310-win_arm64"
+test-skip = ""
+
+archs = ["native"]

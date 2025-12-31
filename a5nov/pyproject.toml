@@ -1,0 +1,26 @@
+[build-system]
+requires = ["setuptools>=45", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fh"
+version = "0.1.7"
+description = "util for file  managements"
+authors = [
+    {name = "Isaac Onagh", email = "mkalafsaz@gmail.com"},
+]
+readme = "README.md"
+license = {text = "MIT"}
+requires-python = ">=3.7"
+dependencies = [
+    "python-magic","chardet","langdetect",
+]
+
+[project.optional-dependencies]
+#dev = ["pytest", "black", "flake8"]
+
+[project.urls]
+Homepage = "https://github.com/isaac4ever/fh"
+
+[project.scripts]
+#your-command = "your_package.cli:main"

@@ -1,0 +1,20 @@
+[project]
+name = "auto-git-push"
+version = "0.1.0"
+description = "Automated formatting, git management, and repository cleanup tool."
+requires-python = ">=3.9"
+authors = [
+    { name="Isaac Onagh", email="mkalafsaz@gmail.com" }
+]
+
+#dependencies = [
+#    "black>=24.0.0",
+#    "pre-commit>=3.7.0",
+#]
+
+[project.scripts]
+gpush = "auto_git_push.__main__:main"
+
+[build-system]
+requires = ["setuptools>=64", "wheel"]
+build-backend = "setuptools.build_meta"

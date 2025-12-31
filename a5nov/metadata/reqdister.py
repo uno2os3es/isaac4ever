@@ -1,0 +1,73 @@
+# Author : isaac
+# Email  : mkalafsaz@gmail.com
+# Time   : Wed 26 Nov 2025 | 23:32:09
+
+import os
+import traceback
+from multiprocessing import Pool, cpu_count
+from tqdm import tqdm
+
+OUTPUT_FILE = 'req.txt'
+TARGET_PREFIX = 'requires-dist'
+
+
+def scan_file(file_path):
+    """
+    Scan a single file and return a list of matched lines.
+    Runs inside worker processes.
+    """
+    matches = []
+    try:
+        with open(file_path, 'r', encoding='utf-8', errors='ignore') as f:
+            for line in f:
+                stripped = line.lstrip()
+                if stripped.lower().startswith(TARGET_PREFIX.lower()):
+                    matches.append((file_path, stripped.rstrip()))
+    except PermissionError:
+        return []  # skip permission-denied files
+    except Exception:
+        traceback.print_exc()
+        return []
+    return matches
+
+
+def collect_files(root='.'):
+    """
+    Walk the directory tree and collect all file paths.
+    """
+    file_paths = []
+    for dirpath, _, filenames in os.walk(root):
+        for fname in filenames:
+            file_paths.append(os.path.join(dirpath, fname))
+    return file_paths
+
+
+def save_results(results, output_file):
+    with open(output_file, 'w', encoding='utf-8') as f:
+        for file_path, line in results:
+            f.write(f'{file_path}: {line}\n')
+
+
+if __name__ == '__main__':
+    print('Enumerating files...')
+    files = collect_files('/data/data/com.termux')
+    total = len(files)
+    print(f'Found {total} files. Starting multiprocessing scan...')
+
+    all_results = []
+
+    # tqdm integrated with multiprocessing
+    with Pool(cpu_count()) as pool:
+        for matches in tqdm(
+            pool.imap_unordered(scan_file, files, chunksize=50),
+            total=total,
+            desc='Scanning',
+            unit='file',
+        ):
+            if matches:
+                all_results.extend(matches)
+
+    print(f'Writing {len(all_results)} matches to {OUTPUT_FILE}...')
+    save_results(all_results, OUTPUT_FILE)
+
+    print('Completed.')

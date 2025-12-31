@@ -1,0 +1,1 @@
+/data/data/com.termux/files/home/repos/isaac4ever/a5nov/fileutils/LICENSE.md

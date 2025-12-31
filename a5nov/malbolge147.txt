@@ -1,0 +1,153 @@
+GitHub repositories for user: malbolge147
+==================================================
+
+Repository: .bash.d
+Description: No description
+URL: https://github.com/malbolge147/.bash.d
+Stars: 0 | Forks: 0 | Language: Shell
+--------------------------------------------------
+Repository: .termux
+Description: No description
+URL: https://github.com/malbolge147/.termux
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: Algorithms-Explanation
+Description: Popular algorithms explained in simple language with examples and links to their implementation in various programming languages and other required resources.
+URL: https://github.com/malbolge147/Algorithms-Explanation
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: awesome
+Description: 😎 Awesome lists about all kinds of interesting topics
+URL: https://github.com/malbolge147/awesome
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: awesome-ai-apps
+Description: A collection of projects showcasing RAG, agents, workflows, and other AI use cases
+URL: https://github.com/malbolge147/awesome-ai-apps
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: awesome-math
+Description: A curated list of awesome mathematics resources
+URL: https://github.com/malbolge147/awesome-math
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: bin
+Description: No description
+URL: https://github.com/malbolge147/bin7
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: blind_watermark
+Description: Blind&Invisible Watermark ，图片盲水印，提取水印无须原图！
+URL: https://github.com/malbolge147/blind_watermark
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: claude-agent-sdk-python
+Description: No description
+URL: https://github.com/malbolge147/claude-agent-sdk-python
+Stars: 0 | Forks: 0 | Language: Python
+--------------------------------------------------
+Repository: CLIP
+Description: CLIP (Contrastive Language-Image Pretraining),  Predict the most relevant text snippet given an image
+URL: https://github.com/malbolge147/CLIP
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: cppdocremover
+Description: No description
+URL: https://github.com/malbolge147/cppdocremover
+Stars: 0 | Forks: 0 | Language: C++
+--------------------------------------------------
+Repository: crawlee-python
+Description: Crawlee—A web scraping and browser automation library for Python to build reliable crawlers. Extract data for AI, LLMs, RAG, or GPTs. Download HTML, PDF, JPG, PNG, and other files from websites. Works with BeautifulSoup, Playwright, and raw HTTP. Both headful and headless mode. With proxy rotation.
+URL: https://github.com/malbolge147/crawlee-python
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: cs249r_book
+Description: Introduction to Machine Learning Systems
+URL: https://github.com/malbolge147/cs249r_book
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: cursor-free-vip
+Description: [Support 0.49.x]（Reset Cursor AI MachineID & Bypass Higher Token Limit） Cursor Ai ，自动重置机器ID ， 免费升级使用Pro功能: You've reached your trial request limit. / Too many free trial accounts used on this machine. Please upgrade to pro. We have this limit in place to prevent abuse. Please let us know if you believe this is a mistake.
+URL: https://github.com/malbolge147/cursor-free-vip
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: deepeval
+Description: The LLM Evaluation Framework
+URL: https://github.com/malbolge147/deepeval
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: DeepSeek-V3
+Description: No description
+URL: https://github.com/malbolge147/DeepSeek-V3
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: dupfind-cpp
+Description: No description
+URL: https://github.com/malbolge147/dupfind-cpp
+Stars: 0 | Forks: 0 | Language: C++
+--------------------------------------------------
+Repository: ebook2audiobook
+Description: Generate audiobooks from e-books, voice cloning & 1107+ languages!
+URL: https://github.com/malbolge147/ebook2audiobook
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: fish-speech
+Description: SOTA Open Source TTS
+URL: https://github.com/malbolge147/fish-speech
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: free-programming-books
+Description: :books: Freely available programming books
+URL: https://github.com/malbolge147/free-programming-books
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: fslint
+Description: No description
+URL: https://github.com/malbolge147/fslint
+Stars: 0 | Forks: 0 | Language: Python
+--------------------------------------------------
+Repository: github_trend_python
+Description: python github trend fetcher
+URL: https://github.com/malbolge147/github_trend_python
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: gpt4free
+Description: The official gpt4free repository | various collection of powerful language models | o4, o3 and deepseek r1, gpt-4.1, gemini 2.5
+URL: https://github.com/malbolge147/gpt4free
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: Kimi-K2
+Description: Kimi K2 is the large language model series developed by Moonshot AI team
+URL: https://github.com/malbolge147/Kimi-K2
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: langextract
+Description: A Python library for extracting structured information from unstructured text using LLMs with precise source grounding and interactive visualization.
+URL: https://github.com/malbolge147/langextract
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: LightRAG
+Description: [EMNLP2025] "LightRAG: Simple and Fast Retrieval-Augmented Generation"
+URL: https://github.com/malbolge147/LightRAG
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: LTX-Video
+Description: Official repository for LTX-Video
+URL: https://github.com/malbolge147/LTX-Video
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: matrix
+Description: No description
+URL: https://github.com/malbolge147/matrix
+Stars: 0 | Forks: 0 | Language: C++
+--------------------------------------------------
+Repository: microsearch
+Description: No description
+URL: https://github.com/malbolge147/microsearch
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------
+Repository: Muon
+Description: Muon is an optimizer for hidden layers in neural networks
+URL: https://github.com/malbolge147/Muon
+Stars: 0 | Forks: 0 | Language: Not specified
+--------------------------------------------------

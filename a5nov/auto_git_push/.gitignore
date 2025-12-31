@@ -1,0 +1,76 @@
+# Python Bytecode Files
+credentials.json
+token.json
+*.pyc
+*.pyo
+__pycache__/
+
+# Distribution / Packaging
+*.egg
+*.egg-info/
+dist/
+build/
+eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+
+# Virtual Environment
+venv/
+ENV/
+env/
+.venv/
+
+# IDE/Editor settings
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Pytest
+.cache/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# mypy
+.mypy_cache/
+
+# Pylint
+.pylint.d/
+
+# Coverage reports
+.coverage
+.coverage.*
+
+# tox
+.tox/
+
+# Flake8
+.flake8
+
+# pytest
+.pytest_cache/
+
+# Sphinx
+docs/_build/
+
+# virtualenv
+*.virtualenv/
+
+# .env files (sensitive credentials like API keys)
+.env
+.env.*
+
+# Docker
+docker-compose.override.yml
+Dockerfile*
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db

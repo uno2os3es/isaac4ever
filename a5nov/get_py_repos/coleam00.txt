@@ -1,0 +1,14 @@
+ai-agents-masterclass
+arcade-ai-agent
+Archon
+context-engineering-intro
+dynamous-ai-coach
+local-ai-packaged
+mcp-crawl4ai-rag
+mcp-mem0
+ollama-swarm
+ottomator-agents
+pydantic-ai-github-agent
+PydanticAI-Research-Agent
+supabase-mcp
+TwoToken-Claim-Contract

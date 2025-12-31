@@ -1,0 +1,2 @@
+Foundry-Local
+hacs_waste_collection_schedule

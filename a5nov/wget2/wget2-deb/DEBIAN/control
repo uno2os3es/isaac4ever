@@ -1,0 +1,10 @@
+Package: wget2
+Version: 1.0
+Section: utils
+Priority: optional
+Architecture: all
+Maintainer: Isaac Onagh <github.com/isaac4ever>
+Description: A multi-threaded Python-based wget alternative
+ Multi-threaded downloader with ETA and progress bar,
+ similar to ADM/IDM, written in Python.
+ 

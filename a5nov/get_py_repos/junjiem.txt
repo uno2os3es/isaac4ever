@@ -1,0 +1,6 @@
+dify-plugin-agent-mcp_sse
+dify-plugin-mcp_compat_dify_tools
+dify-plugin-tools-dat
+dify-plugin-tools-dbquery
+dify-plugin-tools-knowledge_extractor
+dify-plugin-tools-mcp_sse

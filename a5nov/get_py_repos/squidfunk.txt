@@ -1,0 +1,3 @@
+mkdocs-material
+pyo3-debug-vscode
+zensical-issue-71

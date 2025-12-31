@@ -1,0 +1,8 @@
+[project]
+name = "auto_git_fmt"
+version = "0.1.0"
+requires-python = ">=3.8"
+
+
+[project.scripts]
+auto-git-fmt = "auto_git_fmt:main"
