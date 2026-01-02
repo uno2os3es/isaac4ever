@@ -5,7 +5,9 @@ Small utility to reorganize small Python packages.
 Install locally:
 
 ```bash
-pip install -e .pyrefactor run --mode small
+pip install -e .
+
+pyrefactor run --mode small
 pyrefactor run --mode merge
 pyrefactor run --mode subpkg
 pyrefactor run --mode dry-run
